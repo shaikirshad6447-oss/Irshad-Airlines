@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flights | IRSHAD AIRWAYS</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/flights.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="header">
+
+<div class="container">
+
+<nav class="navbar">
+
+<div class="logo">
+
+<h2>IRSHAD AIRWAYS</h2>
+
+<span>Where Every Journey Begins with Trust.</span>
+
+</div>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="flights.html" class="active">Flights</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<button class="login-btn">
+
+Sign In
+
+</button>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- ================= PAGE BANNER ================= -->
+
+<section class="flight-banner">
+
+<div class="banner-overlay"></div>
+
+<div class="banner-content">
+
+<h1>
+
+Find Your Perfect Flight
+
+</h1>
+
+<p>
+
+Search from hundreds of destinations.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= SEARCH FILTER ================= -->
+<section class="flight-search">
+
+    <div class="container">
+
+        <div class="search-box">
+
+            <input type="text" id="fromInput" placeholder="From">
+
+            <input type="text" id="toInput" placeholder="To">
+
+            <input type="date" id="dateInput">
+
+            <select id="classInput">
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+            </select>
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FLIGHT LIST ================= -->
+<section class="flight-list reveal">
+
+    <div class="container">
+
+        <div class="flight-header">
+
+            <div>
+
+                <h2>Available Flights</h2>
+
+                <p>
+                    Choose the best flight for your journey.
+                </p>
+
+            </div>
+
+            <div class="flight-count">
+
+                <span id="flightCount">6 Flights Available</span>
+
+            </div>
+
+        </div>
+
+        <!-- Dynamic Flight Cards will be generated here -->
+
+        <div id="flightContainer">
+
+        </div>
+
+    </div>
+
+</section>
+<button id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="js/flights.js"></script>
+<script src="js/app.js"></script>
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h2>IRSHAD AIRWAYS</h2>
+
+            <p>
+                Where Every Journey Begins with Trust.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="flights.html">Flights</a></li>
+
+                <li><a href="booking.html">Booking</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>📍 Hyderabad, India</p>
+
+            <p>📞 +91 98765 43210</p>
+
+            <p>📧 support@irshadairways.com</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 IRSHAD AIRWAYS | All Rights Reserved.
+
+    </div>
+
+</footer>
+</body>
+
+</html>

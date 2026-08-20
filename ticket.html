@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boarding Pass | IRSHAD AIRWAYS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ticket.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<section class="ticket-page">
+
+    <div class="ticket-wrapper">
+
+        <h1 class="ticket-title">
+            Your Boarding Pass
+        </h1>
+
+        <div class="boarding-pass">
+
+            <!-- ================= HEADER ================= -->
+
+            <div class="boarding-header">
+
+                <div class="airways-brand">
+
+                    <i class="fa-solid fa-plane-departure"></i>
+
+                    <div>
+
+                        <h2>IRSHAD AIRWAYS</h2>
+
+                        <p>
+                            Where Every Journey Begins with Trust.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="pass-type">
+                    BOARDING PASS
+                </div>
+
+            </div>
+
+
+            <!-- ================= ROUTE ================= -->
+
+            <div class="route-section">
+
+                <div class="airport">
+
+                    <span>FROM</span>
+
+                    <h2 id="fromCity">---</h2>
+
+                    <p id="departureTime">---</p>
+
+                </div>
+
+                <div class="flight-route">
+
+                    <div class="route-line">
+
+                        <span></span>
+
+                        <i class="fa-solid fa-plane"></i>
+
+                        <span></span>
+
+                    </div>
+
+                    <small id="flightDuration">
+                        Flight
+                    </small>
+
+                </div>
+
+                <div class="airport">
+
+                    <span>TO</span>
+
+                    <h2 id="toCity">---</h2>
+
+                    <p id="arrivalTime">---</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PASSENGER ================= -->
+
+            <div class="passenger-section">
+
+                <div class="passenger-main">
+
+                    <span>PASSENGER</span>
+
+                    <h3 id="passengerName">---</h3>
+
+                </div>
+
+                <div>
+
+                    <span>FLIGHT</span>
+
+                    <h3 id="flightNo">---</h3>
+
+                </div>
+
+                <div>
+
+                    <span>CLASS</span>
+
+                    <h3 id="travelClass">---</h3>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= DETAILS ================= -->
+
+            <div class="ticket-details">
+
+                <div>
+
+                    <span>SEAT</span>
+
+                    <strong id="seatNumber">---</strong>
+
+                </div>
+
+                <div>
+
+                    <span>GATE</span>
+
+                    <strong id="gateNumber">---</strong>
+
+                </div>
+
+                <div>
+
+                    <span>BOARDING</span>
+
+                    <strong id="boardingTime">---</strong>
+
+                </div>
+
+                <div>
+
+                    <span>BOOKING ID</span>
+
+                    <strong id="bookingId">---</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= DIVIDER ================= -->
+
+            <div class="ticket-divider">
+
+                <span></span>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- ================= FOOTER ================= -->
+
+            <div class="boarding-footer">
+
+                <div>
+
+                    <p>
+                        Please arrive at the airport at least
+                        <strong>2 hours</strong> before departure.
+                    </p>
+
+                    <p>
+                        Thank you for choosing
+                        <strong>IRSHAD AIRWAYS.</strong>
+                    </p>
+
+                </div>
+
+                <div class="ticket-price">
+
+                    <span>FARE</span>
+
+                    <strong id="ticketPrice">---</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ACTIONS ================= -->
+
+        <div class="ticket-actions">
+
+            <button onclick="window.print()" class="print-ticket">
+
+                <i class="fa-solid fa-print"></i>
+
+                Print Ticket
+
+            </button>
+
+            <a href="index.html" class="home-ticket">
+
+                <i class="fa-solid fa-house"></i>
+
+                Back to Home
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="js/ticket.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

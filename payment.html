@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Payment | IRSHAD AIRWAYS</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Payment CSS -->
+    <link rel="stylesheet" href="css/payment.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="header">
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <h2>IRSHAD AIRWAYS</h2>
+
+                <span>
+                    Where Every Journey Begins with Trust.
+                </span>
+
+            </div>
+
+
+            <ul class="nav-menu">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="flights.html">
+                        Flights
+                    </a>
+                </li>
+
+                <li>
+                    <a href="booking.html">
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==========================================
+     PAYMENT PAGE
+========================================== -->
+
+<section class="payment-page">
+
+    <div class="container">
+
+
+        <!-- PAGE TITLE -->
+
+        <div class="payment-title">
+
+            <h1>
+                Complete Your Payment
+            </h1>
+
+            <p>
+                Securely complete your booking with IRSHAD AIRWAYS.
+            </p>
+
+        </div>
+
+
+
+        <!-- ======================================
+             PAYMENT LAYOUT
+        ======================================= -->
+
+        <div class="payment-layout">
+
+
+            <!-- ==================================
+                 LEFT SIDE
+            =================================== -->
+
+            <div class="payment-box">
+
+
+                <h2>
+                    <i class="fa-solid fa-credit-card"></i>
+                    Payment Method
+                </h2>
+
+
+
+                <!-- PAYMENT METHODS -->
+
+                <div class="payment-methods">
+
+
+                    <!-- UPI -->
+
+                    <button
+                        type="button"
+                        class="payment-method active"
+                        data-method="upi">
+
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+
+                        <span>
+                            UPI
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- CARD -->
+
+                    <button
+                        type="button"
+                        class="payment-method"
+                        data-method="card">
+
+                        <i class="fa-solid fa-credit-card"></i>
+
+                        <span>
+                            Card
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- NET BANKING -->
+
+                    <button
+                        type="button"
+                        class="payment-method"
+                        data-method="netbanking">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                        <span>
+                            Net Banking
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     UPI PAYMENT
+                =================================== -->
+
+                <div
+                    class="payment-panel active"
+                    id="upiPanel">
+
+
+                    <h3>
+                        Pay using UPI
+                    </h3>
+
+
+                    <p>
+                        Enter your UPI ID to continue.
+                    </p>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            UPI ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="upiId"
+                            placeholder="example@upi">
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     CARD PAYMENT
+                =================================== -->
+
+                <div
+                    class="payment-panel"
+                    id="cardPanel">
+
+
+                    <h3>
+                        Card Payment
+                    </h3>
+
+
+                    <p>
+                        Enter your card details.
+                    </p>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Card Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cardNumber"
+                            maxlength="19"
+                            placeholder="1234 5678 9012 3456">
+
+                    </div>
+
+
+                    <div class="card-row">
+
+
+                        <div class="input-group">
+
+                            <label>
+                                Expiry Date
+                            </label>
+
+                            <input
+                                type="text"
+                                id="expiry"
+                                placeholder="MM/YY"
+                                maxlength="5">
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label>
+                                CVV
+                            </label>
+
+                            <input
+                                type="password"
+                                id="cvv"
+                                placeholder="123"
+                                maxlength="3">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Card Holder Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cardName"
+                            placeholder="Name on card">
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ==================================
+                     NET BANKING
+                =================================== -->
+
+                <div
+                    class="payment-panel"
+                    id="netbankingPanel">
+
+
+                    <h3>
+                        Net Banking
+                    </h3>
+
+
+                    <p>
+                        Select your bank.
+                    </p>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Select Bank
+                        </label>
+
+                        <select id="bankSelect">
+
+                            <option value="">
+                                Select your bank
+                            </option>
+
+                            <option value="sbi">
+                                State Bank of India
+                            </option>
+
+                            <option value="hdfc">
+                                HDFC Bank
+                            </option>
+
+                            <option value="icici">
+                                ICICI Bank
+                            </option>
+
+                            <option value="axis">
+                                Axis Bank
+                            </option>
+
+                            <option value="kotak">
+                                Kotak Mahindra Bank
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SECURITY -->
+
+                <div class="payment-security">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <span>
+                        Your payment information is securely handled.
+                    </span>
+
+                </div>
+
+
+
+                <!-- PAY BUTTON -->
+
+                <button
+                    type="button"
+                    id="payNowBtn"
+                    class="pay-now-btn">
+
+                    <span>
+                        Pay Now
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- ==================================
+                 RIGHT SIDE — BOOKING SUMMARY
+            =================================== -->
+
+            <div class="payment-summary">
+
+
+                <h2>
+                    Booking Summary
+                </h2>
+
+
+                <div
+                    id="paymentSummary">
+
+                    <!-- JavaScript will insert
+                         booking information here -->
+
+                </div>
+
+
+                <div class="summary-divider"></div>
+
+
+                <div class="total-row">
+
+                    <span>
+                        Total Amount
+                    </span>
+
+                    <strong id="paymentAmount">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     PAYMENT PROCESSING OVERLAY
+========================================== -->
+
+<div
+    id="paymentLoader"
+    class="payment-loader">
+
+
+    <div class="payment-loader-box">
+
+
+        <div class="payment-spinner">
+
+            <i class="fa-solid fa-plane"></i>
+
+        </div>
+
+
+        <h2>
+            Processing Payment
+        </h2>
+
+
+        <p>
+            Please don't close this window.
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     SUCCESS MESSAGE
+========================================== -->
+
+<div
+    id="paymentSuccess"
+    class="payment-success">
+
+
+    <div class="success-box">
+
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <h2>
+            Payment Successful!
+        </h2>
+
+
+        <p>
+            Your booking has been confirmed.
+        </p>
+
+
+        <span>
+            Preparing your boarding pass...
+        </span>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     BACK TO TOP
+========================================== -->
+
+<button id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div>
+
+            <h2>
+                IRSHAD AIRWAYS
+            </h2>
+
+            <p>
+                Where Every Journey Begins with Trust.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="flights.html">
+                        Flights
+                    </a>
+                </li>
+
+                <li>
+                    <a href="booking.html">
+                        Booking
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                📍 Hyderabad, India
+            </p>
+
+            <p>
+                📞 +91 98765 43210
+            </p>
+
+            <p>
+                📧 support@irshadairways.com
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 IRSHAD AIRWAYS | All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+<script src="js/payment.js"></script>
+
+<script src="js/app.js"></script>
+
+
+</body>
+
+</html>

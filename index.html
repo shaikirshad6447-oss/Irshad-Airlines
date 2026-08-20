@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>IRSHAD AIRWAYS | Where Every Journey Begins with Trust.</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+<!-- ================= CINEMATIC LOADER ================= -->
+
+<div id="loader">
+
+    <!-- Background -->
+    <div class="loader-background"></div>
+
+    <!-- Dark cinematic overlay -->
+    <div class="loader-overlay"></div>
+
+    <!-- Loader Content -->
+    <div class="loader-content">
+
+        <div class="loader-plane">
+            <i class="fa-solid fa-plane"></i>
+        </div>
+
+        <div class="loader-brand">
+
+            <h1>IRSHAD AIRWAYS</h1>
+
+            <p>Where Every Journey Begins with Trust.</p>
+
+        </div>
+
+        <div class="loading-wrapper">
+
+            <div class="loading-bar">
+
+                <span></span>
+
+            </div>
+
+            <div class="loading-info">
+
+                <span>PREPARING YOUR JOURNEY</span>
+
+                <span id="loading-percent">0%</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <!-- ==========================================
+                    HEADER
+    =========================================== -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <nav class="navbar">
+
+                <!-- Logo -->
+
+                <div class="logo">
+
+                    <h2>IRSHAD AIRWAYS</h2>
+
+                    <span>Where Every Journey Begins with Trust.</span>
+
+                </div>
+
+                <!-- Navigation -->
+
+                <ul class="nav-menu">
+
+                    <li><a href="index.html" class="active">Home</a></li>
+
+                    <li><a href="flights.html">Flights</a></li>
+
+                    <li><a href="#">Offers</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+                     <i class="fa-solid fa-bars"></i>
+                      </button>
+
+                </ul>
+
+                <!-- Right Side -->
+
+                <div class="nav-buttons">
+
+                    <button class="login-btn">
+
+                        Sign In
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ==========================================
+                    HERO SECTION
+    =========================================== -->
+
+    <section class="hero">
+
+        <!-- Dark Overlay -->
+
+        <div class="overlay"></div>
+
+        <!-- Hero Content -->
+
+        <div class="hero-content">
+
+            <p class="welcome-text">
+
+                Welcome to IRSHAD AIRWAYS
+
+            </p>
+
+            <h1>
+
+                Fly Beyond
+
+                <span>Your Dreams</span>
+
+            </h1>
+
+            <p class="hero-description">
+
+                Experience comfort, safety and world-class service.
+
+                Book your next journey with confidence.
+
+            </p>
+
+           <div class="hero-buttons">
+
+    <a href="flights.html" class="primary-btn">
+
+        <i class="fa-solid fa-plane"></i>
+
+        Book Flight
+
+    </a>
+
+    <a href="#search" class="secondary-btn">
+
+        <i class="fa-solid fa-compass"></i>
+
+        Explore Flights
+
+    </a>
+
+</div>
+
+<!-- HERO STATS -->
+
+<div class="hero-stats">
+
+    <div class="stat">
+
+        <h2>150+</h2>
+
+        <p>Destinations</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>50+</h2>
+
+        <p>Aircraft</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>500K+</h2>
+
+        <p>Happy Travelers</p>
+
+    </div>
+
+    <div class="stat">
+
+        <h2>24/7</h2>
+
+        <p>Support</p>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <!-- Floating Search Card -->
+
+        <div class="search-card" id="search">
+
+            <h2>
+
+                Search Flights
+
+            </h2>
+
+            <form>
+
+                <div class="input-group">
+
+                    <label>From</label>
+
+                    <input type="text" placeholder="Departure City">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>To</label>
+
+                    <input type="text" placeholder="Destination City">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Departure</label>
+
+                    <input type="date">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Passengers</label>
+
+                    <select>
+
+                        <option>1 Passenger</option>
+                        <option>2 Passengers</option>
+                        <option>3 Passengers</option>
+                        <option>4 Passengers</option>
+
+                    </select>
+
+                </div>
+
+                <button type="submit" class="search-btn">
+
+                    <i class="fa-solid fa-plane-departure"></i>
+
+                    Search Flights
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+<!-- ==========================================
+            POPULAR DESTINATIONS
+========================================== -->
+
+<section class="destinations reveal">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Popular Destinations</h2>
+
+            <p>
+                Explore our most loved destinations at the best prices.
+            </p>
+
+        </div>
+           <div class="destination-grid"></div>
+        <!-- KURNOOL -->
+<div class="destination-grid">
+
+    <!-- KURNOOL -->
+    <div class="destination-card ">
+
+        <img src="images/destinations/kurnool.jpg" alt="Kurnool">
+
+        <div class="destination-content">
+
+            <h3>Kurnool</h3>
+
+            <p>Starting From</p>
+
+            <h4>₹3,299</h4>
+
+            <div class="destination-rating">
+
+                ⭐ ⭐ ⭐ ⭐ ⭐
+
+            </div>
+
+            <a href="flights.html" class="destination-btn">
+                <button>Book Now</button>
+            </a>
+
+        </div>
+
+    </div>   
+            <!--bangalore -->
+            <div class="destination-card ">
+
+              <img src="images/destinations/bangalore.jpg" alt="bangalore">
+               <div class="destination-content">
+
+                    <h3>bangalore</h3>
+
+                    <p>Starting From</p>
+
+                    <h4>₹5,499</h4>
+
+             <div class="destination-rating">
+
+              ⭐ ⭐ ⭐ ⭐ ⭐
+
+            </div>
+
+        <a href="flights.html" class="destination-btn">
+           <button>Book Now</button>
+        </a>
+
+        </div>
+
+     </div>
+
+            <!-- Goa -->
+
+            <div class="destination-card">
+
+                <img src="images/destinations/goa.jpg" alt="Goa">
+
+                <div class="destination-content">
+
+                    <h3>Goa</h3>
+
+                    <p>Starting From</p>
+
+                    <h4>₹4,999</h4>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <button>Book Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- Delhi -->
+
+            <div class="destination-card">
+
+                <img src="images/destinations/delhi.jpg" alt="Delhi">
+
+                <div class="destination-content">
+
+                    <h3>Delhi</h3>
+
+                    <p>Starting From</p>
+
+                    <h4>₹5,499</h4>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐☆
+
+                    </div>
+
+                    <button>Book Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- Hyderabad -->
+
+            <div class="destination-card">
+
+                <img src="images/destinations/hyderabad.jpg" alt="Hyderabad">
+
+                <div class="destination-content">
+
+                    <h3>Hyderabad</h3>
+
+                    <p>Starting From</p>
+
+                    <h4>₹2,999</h4>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <button>Book Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- Mumbai -->
+
+            <div class="destination-card">
+
+                <img src="images/destinations/mumbai.jpg" alt="Mumbai">
+
+                <div class="destination-content">
+
+                    <h3>Mumbai</h3>
+
+                    <p>Starting From</p>
+
+                    <h4>₹3,999</h4>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐☆
+
+                    </div>
+
+                    <button>Book Now</button>
+
+                </div>
+
+            </div>
+            
+
+     </div>
+
+    </div>
+
+</section>
+
+   <!-- ==========================================
+            WHY CHOOSE US
+========================================== -->
+
+<section class="features reveal">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Why Choose IRSHAD AIRWAYS?</h2>
+
+            <p>
+                We make every journey safe, comfortable and memorable.
+            </p>
+
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-plane"></i>
+                </div>
+
+                <h3>Easy Booking</h3>
+
+                <p>
+                    Book your flights within minutes using our simple and user-friendly booking system.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>Safe Journey</h3>
+
+                <p>
+                    Your safety is our highest priority with modern aircraft and trained professionals.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+
+                <h3>Best Prices</h3>
+
+                <p>
+                    Enjoy affordable fares and exclusive discounts throughout the year.
+                </p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <h3>24/7 Support</h3>
+
+                <p>
+                    Our support team is available around the clock to help with your travel needs.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+            SPECIAL OFFERS
+========================================== -->
+
+<section class="offers reveal">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Special Flight Offers</h2>
+
+            <p>Save more on every journey with our exclusive deals.</p>
+
+        </div>
+
+        <div class="offer-grid">
+
+            <!-- Student Offer -->
+
+            <div class="offer-card blue">
+
+                <span class="offer-tag">Student Offer</span>
+
+                <h3>20% OFF</h3>
+
+                <p>
+                    Enjoy exclusive discounts on domestic flights with a valid student ID.
+                </p>
+
+                <button>Book Now</button>
+
+            </div>
+
+            <!-- Festival Offer -->
+
+            <div class="offer-card orange">
+
+                <span class="offer-tag">Festival Sale</span>
+
+                <h3>Flat ₹1000 OFF</h3>
+
+                <p>
+                    Celebrate your holidays with amazing savings on selected routes.
+                </p>
+
+                <button>Book Now</button>
+
+            </div>
+
+            <!-- Holiday Offer -->
+
+            <div class="offer-card green">
+
+                <span class="offer-tag">Holiday Deal</span>
+
+                <h3>Up to 35% OFF</h3>
+
+                <p>
+                    Plan your dream vacation today and unlock exciting travel offers.
+                </p>
+
+                <button>Book Now</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+            CUSTOMER TESTIMONIALS
+========================================== -->
+
+<section class="testimonials reveal">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>What Our Customers Say</h2>
+
+            <p>
+                Trusted by thousands of happy travelers across India.
+            </p>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <!-- Review 1 -->
+
+            <div class="testimonial-card">
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        R
+                    </div>
+
+                    <div>
+
+                        <h3>Rahul Sharma</h3>
+
+                        <span>Business Traveler</span>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">
+
+                    ⭐⭐⭐⭐⭐
+
+                </div>
+
+                <p>
+
+                    Booking with IRSHAD AIRWAYS was smooth and quick.
+                    The flight was comfortable and the customer support
+                    was excellent.
+
+                </p>
+
+            </div>
+
+            <!-- Review 2 -->
+
+            <div class="testimonial-card">
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        P
+                    </div>
+
+                    <div>
+
+                        <h3>Priya Reddy</h3>
+
+                        <span>Student</span>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">
+
+                    ⭐⭐⭐⭐⭐
+
+                </div>
+
+                <p>
+
+                    I received a great student discount and booking
+                    my ticket took less than two minutes.
+
+                </p>
+
+            </div>
+
+            <!-- Review 3 -->
+
+            <div class="testimonial-card">
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        A
+                    </div>
+
+                    <div>
+
+                        <h3>Arjun Kumar</h3>
+
+                        <span>Tourist</span>
+
+                    </div>
+
+                </div>
+
+                <div class="stars">
+
+                    ⭐⭐⭐⭐☆
+
+                </div>
+
+                <p>
+
+                    Affordable prices, clean interface and an amazing
+                    booking experience. Highly recommended.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+                FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h2>IRSHAD AIRWAYS</h2>
+
+                <p>
+                    Where Every Journey Begins with Trust.
+                </p>
+
+                <p>
+                    Experience safe, comfortable and affordable flights across India and beyond.
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="flights.html">Flights</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p><i class="fa-solid fa-location-dot"></i> Hyderabad, India</p>
+
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+
+                <p><i class="fa-solid fa-envelope"></i> support@irshadairways.com</p>
+
+            </div>
+
+            <!-- Newsletter -->
+
+            <div class="footer-column">
+
+                <h3>Newsletter</h3>
+
+                <p>Subscribe for exclusive offers and travel updates.</p>
+
+                <div class="newsletter">
+
+                    <input type="email" placeholder="Enter your email">
+
+                    <button>Subscribe</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 IRSHAD AIRWAYS. All Rights Reserved.
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<button id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+    <!-- Common JS -->
+    <script src="js/app.js"></script>
+
+    <!-- Home JS -->
+    <script src="js/home.js"></script>
+    
+</body>
+
+</html>
